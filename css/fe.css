@@ -2,3 +2,6 @@
 @import './modules/sections.css';
 @import './modules/menu.css';
 @import './modules/card.css';
+@import './modules/buttons.css';
+
+@import './modules/utils.css';

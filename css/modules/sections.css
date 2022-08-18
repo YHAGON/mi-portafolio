@@ -7,8 +7,10 @@
   padding-top: calc(5rem + var(--padding-section));
 }
 
-.section__profile {
-  background-image: ('./assets/img/fondo.jpg');
+.section--profile {
+  background-image: url('./assets/img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
