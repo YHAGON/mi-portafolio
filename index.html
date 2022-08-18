@@ -30,6 +30,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
   rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     
 </head>
 
@@ -38,38 +40,45 @@
     <nav class="nav">
         <div class="container container--nav-r">
             <a href="#profile">
-                <img src="./assets/img/foto reducida.jpg" alt="logo Yhancarlos Gonzales" with="48" height="48" class="nav__logo" />
+                <img src="./assets/img/foto reducida.jpg" alt="logo Yhancarlos Gonzales" with="48" height="48" 
+                class="nav__logo" />
             </a>
+            <label for="menu" class="icon"><i class="bi bi-list"></i></label>
+            <input type="checkbox" id="menu" class="menu__checkbox" />
             <ul class="menu">
                <li>
-                    <a href="#profile">Perfil</a>
+                    <a href="#profile" class="menu__link">Perfil</a>
                 </li>
                 <li>
-                    <a href="#experiencies">Experiencia</a>
-                </li>
-                <!---- <li>
-                    <a href="#">Proyecto</a>
+                    <a href="#experiences" class="menu__link">Experiencia</a>
                 </li>
                 <li>
-                    <a href="#">Habilidades</a>
-                </li>-->
+                    <a href="#" class="menu__link">Proyecto</a>
+                </li>
                 <li>
-                    <a href="#contact">Contacto</a>
+                    <a href="#" class="menu__link">Habilidades</a>
+                </li>
+                <li>
+                    <a href="#contact" class="menu__link">Contacto</a>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
 <main>
-    <article id="profile">
-        <div>
-            <div>
-              <h1>Yhancarlos Gonzales</h1>
-              <h2>El mejor diseñador de paginas web frontend del Perú</h2>
-              <p>
+  <article id="profile" class="section section--hero">
+    <div class="container">
+      <div class="card">
+        <div class="card__header">
+              <h1 class="card__title">Yhancarlos Gonzales</h1>
+              </div>
+              <div class="card__body">
+              <h2 class="card__subtitle">El mejor diseñador de paginas web frontend del Perú</h2>
+              <p class="card__text">
                 Desarrollador web frontend, apasionado del autoapredizaje y del código limipio.
               </p>
-              <div>
+        </div>
+              <div class="card__footer">
                 <a href="https://1drv.ms/b/s!AtfDfgD4NXs0ciYTxQJqVwcsO-c?e=YE1CL2" target="_blank"
                 rel="noopener noreferrer">CV</a>
                 <a href="#">Proyectos</a>
