@@ -2,3 +2,25 @@
     width: 100%;
     overflow: auto;
   }
+  
+  .table {
+    background-color: var(--secondary-theme-color);
+    /* padding: 0.5rem; */
+  }
+  
+  thead {
+    background-color: var(--reverse-primary-text-color);
+  }
+  
+  th,
+  td {
+    padding: 0.5rem;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: var(--primary-shadow-color);
+  }
+  
+  tr:nth-child(even) {
+    background-color: var(--tertiary-shadow-color);
+  }
