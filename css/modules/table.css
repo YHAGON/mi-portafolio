@@ -4,23 +4,31 @@
   }
   
   .table {
-    background-color: var(--secondary-theme-color);
-    /* padding: 0.5rem; */
+    background-color: var(--tertiary-shadow-color);
   }
   
-  thead {
-    background-color: var(--reverse-primary-text-color);
+  .table__header {
+    background-color: var(--tertiary-shadow-color);
+    color: var(--primary-highlight-color);
   }
   
-  th,
-  td {
+  .table__cell {
     padding: 0.5rem;
   }
   
-  tr:nth-child(odd) {
+  .table__row:nth-child(odd) {
     background-color: var(--primary-shadow-color);
   }
   
-  tr:nth-child(even) {
+  .table__row:nth-child(even) {
+    background-color: var(--secondary-shadow-color);
+  }
+  
+  .table__row:hover {
+    filter: brightness(112.5%)
+  }
+  
+  .table__footer {
     background-color: var(--tertiary-shadow-color);
+    text-align: center;
   }
