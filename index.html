@@ -32,7 +32,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-    
+
   </head>
 
   <body class="body">
@@ -48,8 +48,8 @@
               class="nav__logo"
             />
           </a>
-          <label for="menu" class="icon"><i class="bi bi-list"></i></label>
-          <input type="checkbox" id="menu" class="menu__checkbox d-none" />
+          <label for="menu" class="icon md:d-none"><i class="bi bi-list"></i></label>
+          <input type="checkbox" id="menu" class="menu-checkbox d-none" />
           <ul class="menu">
             <li>
               <a href="#profile" class="menu__link">Perfil</a>
@@ -88,8 +88,8 @@
             </div>
             <div class="card__footer">
               <a href="https://1drv.ms/b/s!AtfDfgD4NXs0ciYTxQJqVwcsO-c?e=oshuxk" target="_blank" rel="noopener noreferrer"
-                class="button button--primary">CV</a>
-              <a href="#" class="button button--primary button--outline">Proyectos</a>
+              class="button button--lg button--primary">CV</a>
+              <a href="#" class="button button--lg button--primary button--outline">Proyectos</a>
             </div>
           </div>
           <div class="hero-img">
@@ -125,9 +125,10 @@
           </div>
         </div>
       </article>
-      <section id="experiencies">
-        <div>
-          <h2>Experienia</h2>
+      <section id="experiencies" class="section">
+        <div class="container container--element">
+          <h2 class="section__title">Experienia</h2>
+          <div class="table--responsive">
           <table>
             <thead>
               <tr>
@@ -227,6 +228,7 @@
             </tfoot>
           </table>
         </div>
+        </div>
       </section>
       <section id="contact">
         <div>
@@ -261,7 +263,6 @@
                   alt="GitHub"
                   width="24"
                   height="24"
-                  class="menu__img"
                 />
               </a>
             </li>
@@ -272,7 +273,6 @@
                   alt="LinkedIn"
                   width="24"
                   height="24"
-                  class="menu__img"
                 />
               </a>
             </li>
@@ -283,7 +283,6 @@
                   alt="Instagram"
                   width="24"
                   height="24"
-                  class="menu__img"
                 />
               </a>
             </li>
@@ -294,7 +293,6 @@
                   alt="Facebook"
                   width="24"
                   height="24"
-                  class="menu__img"
                 />
               </a>
             </li>

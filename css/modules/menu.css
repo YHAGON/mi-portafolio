@@ -49,6 +49,9 @@
 }
 
 @media (min-width: 768px) {
+  .icon--menu {
+    display: none;
+  }
   .menu {
     position: static;
     width: auto;
