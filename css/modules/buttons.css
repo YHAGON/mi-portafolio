@@ -5,13 +5,17 @@
   border-radius: var(--primary-border-radius);
   color: var(--primary-text-color);
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-family: var(--primary-font-family);
   text-decoration: none;
   padding: 0.25em 1em;
   box-sizing: border-box;
   cursor: pointer;
   transition: all 0.25s;
+}
+
+.button--lg {
+  font-size: 1.125rem;
 }
 
 .button:hover {
@@ -42,4 +46,14 @@
 .button--outline {
   background-color: transparent;
   color: var(--primary-text-color);
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 1.125rem;
+  }
+
+  .button--lg {
+    font-size: 1.25rem;
+  }
 }
