@@ -1,4 +1,5 @@
 .card {
+  z-index: 5;
   border: 0.0625rem solid var(--reverse-primary-shadow-color);
   border-radius: var(--primary-border-radius);
   overflow: hidden;
@@ -45,20 +46,20 @@
   text-align: center;
 }
 
-@media (min-width: 768px); {
+@media (min-width: 768px) {
   .card {
     max-width: 512px;
   }
 
-.card__title {
-  font-size: 1.5rem;
-}
+  .card__title {
+    font-size: 1.75rem;
+  }
 
-.card__subtitle {
-  font-size: 1.5rem;
-}
-.card__text {
-  font-size: 1.25rem;
-}
+  .card__subtitle {
+    font-size: 1.5rem;
+  }
 
+  .card__text {
+    font-size: 1.25rem;
+  }
 }

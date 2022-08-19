@@ -1,4 +1,5 @@
 .hero-img {
+    z-index: 5;
     position: relative;
   }
   
@@ -47,4 +48,18 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
+  }
+  
+  /* .@media (min-width: 768px) { {} */
+  
+  @media (min-width: 768px) {
+    .hero-img__img {
+      width: 320px;
+      height: 320px;
+    }
+  
+    .hero-img__decorator {
+      width: 80px;
+      height: 80px;
+    }
   }
