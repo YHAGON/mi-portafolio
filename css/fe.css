@@ -6,5 +6,7 @@
 @import './modules/buttons.css';
 @import './modules/hero.css';
 @import './modules/table.css';
+@import './modules/list.css';
+@import './modules/form.css';
 
 @import './modules/utils.css';

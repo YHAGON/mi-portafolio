@@ -29,16 +29,6 @@
   background-color: var(--tertiary-shadow-color);
 }
 
-.section--profile::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: var(--tertiary-shadow-color);
-}
-
 .section__title {
   font-weight: 800;
   font-size: 1.75rem;
@@ -65,11 +55,11 @@
   gap: 2rem;
 }
 
-.container--element {
+.container--elements {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: var(--padding-section);
 }
 
 @media (min-width: 768px) {

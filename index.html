@@ -50,19 +50,19 @@
           </a>
           <label for="menu" class="icon md:d-none"><i class="bi bi-list"></i></label>
           <input type="checkbox" id="menu" class="menu-checkbox d-none" />
-          <ul class="menu">
+          <ul class="menu menu--header">
             <li>
               <a href="#profile" class="menu__link">Perfil</a>
             </li>
             <li>
               <a href="#experiences" class="menu__link">Experiencia</a>
             </li>
-            <li>
+            <!--<li>
               <a href="#" class="menu__link">Proyecto</a>
             </li>
             <li>
               <a href="#" class="menu__link">Habilidades</a>
-            </li>
+            </li>-->
             <li>
               <a href="#contact" class="menu__link">Contacto</a>
             </li>
@@ -126,7 +126,7 @@
         </div>
       </article>
       <section id="experiencies" class="section">
-        <div class="container container--element">
+        <div class="container container--elements">
           <h2 class="section__title">Experienia</h2>
           <div class="table-responsive">
           <table class="table">
@@ -145,12 +145,12 @@
                 <td class="table__cell">Cineplanet</td>
                 <td class="table__cell">Frontend Developer</td>
                 <td class="table__cell">
-                  <ul>
-                    <li>
+                  <ul class="list">
+                    <li class="list__item">
                       Desarrollo de aplicaciones con React y Redux basándome en
                       un Figma y aplicando Scrum.
                     </li>
-                    <li>
+                    <li class="list__item">
                       Investigación, optimización, mantenimiento y presentación
                       aplicando tecnologías modernas.
                     </li>
@@ -163,12 +163,12 @@
                 <td class="table__cell">Tecsup</td>
                 <td class="table__cell">Docente Frontend</td>
                 <td class="table__cell">
-                  <ul>
-                    <li>
+                  <ul class="list">
+                    <li class="list__item">
                       Bootcamp: Desarrollo Frontend: git, Lógica P., HTML, CSS,
                       JS, B, Sass, Node, React, Testing.
                     </li>
-                    <li>
+                    <li class="list__item">
                       Desarrollo de proyectos y materiales para el aprendizaje
                       teórico y práctico de los alumnos.
                     </li>
@@ -181,12 +181,12 @@
                 <td class="table__cell">DRIVEN</td>
                 <td class="table__cell">Frontend Developer</td>
                 <td class="table__cell">
-                  <ul>
-                    <li>
+                  <ul class="list">
+                    <li class="list__item">
                       Desarrollo de aplicaciones e-commerce con VTEX IO y React
                       bajo el marco de trabajo Scrum.
                     </li>
-                    <li>
+                    <li class="list__item">
                       Maquetación web de diseños del Figma en React
                       esencialmente con CSS.
                     </li>
@@ -199,12 +199,12 @@
                 <td class="table__cell">Idat</td>
                 <td class="table__cell">Docente</td>
                 <td class="table__cell">
-                  <ul>
-                    <li>
+                  <ul class="list">
+                    <li class="list__item">
                       Curso: Diseño y Desarrollo Web: HTML, CSS, JS, Bootstrap,
                       jQuery, PHP y MySQL.
                     </li>
-                    <li>
+                    <li class="list__item">
                       Desarrollo de proyectos y materiales para el aprendizaje
                       teórico y práctico de los alumnos.
                     </li>
@@ -229,24 +229,27 @@
         </div>
         </div>
       </section>
-      <section id="contact">
-        <div>
-          <h2>Contacto</h2>
-          <form>
-            <input type="tel" placeholder="Celular" />
-            <button>Contactar</button>
+      <section id="contact" class="section section--secondary">
+        <div class="container container--elements">
+          <h2 class="section__title">Contacto</h2>
+          <form class="form">
+            <form class="form"> 
+            <div class="form__group">
+            <input type="tel" placeholder="Celular" class="form__input"  pattern="[0-9+]+"
+            title="Ingresar un número de celular" required />
+            <button class="button button--primary b-radius-none">Contactar</button>
+            </div>
           </form>
         </div>
       </section>
     </main>
-    <footer>
-      <nav>
-        <div>
-          <ul>
+    <footer class="footer">
+      <nav class="nav">
+        <div class="container container--elements">
+          <ul class="menu">
             <li>
               <a
-                href="https://www.youtube.com/channel/UC41xH9LokStfjrC3q_5l26A"
-              >
+                href="https://www.youtube.com/channel/UC41xH9LokStfjrC3q_5l26A">
                 <img
                   src="./assets/svg/logo-youtube.svg"
                   alt="YouTube"
@@ -302,18 +305,16 @@
                   alt="Web"
                   width="24"
                   height="24"
-                  class="menu__img"
                 />
               </a>
             </li>
           </ul>
-          <h2>
+          <h2 class="footer__title">
             🐺Copyright &copy; 2022
             <a
               href="https://www.linkedin.com/in/yhancarlos-gonzales/"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer"  class="footer__link">
               Yhancarlos Gonzales
             </a>
             Todos los derechos reservados.🐺

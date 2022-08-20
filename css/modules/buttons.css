@@ -48,6 +48,10 @@
   color: var(--primary-text-color);
 }
 
+.b-radius-none {
+border-radius: 0;
+}
+
 @media (min-width: 768px) {
   .button {
     font-size: 1.125rem;
